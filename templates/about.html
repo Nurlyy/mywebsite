@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'about.css' %}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<title>About Me</title>
+</head>
+<body>
+
+	<nav>
+		<div class="logo">
+			<a href="home"><img src="{% static 'img/logo2.png' %}"></a>
+		</div>
+		<ul class="nav-links">
+			<li><a href="about">About</a></li>
+			<li><a href="gallery">Gallery</a></li>
+			<li><a href="contact">Contact</a></li>
+			<li><a href="#">Projects</a></li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+	
+	<div class="zagolovok">
+		<h1>About me</h1>
+	</div>
+
+	<div class="text">
+		<h4>I am junior developer. I can do projects on Python Django, partially i can work with MySQL, also, I know basics of front-end developing and I can write front-end code for medium websites.
+          If it's interesting, I know basics of C++, C#. And I can build IOT projects using Arduino or Raspberry PI.
+          <br><br>
+          Now I will say about my interests. I want to learn something always. I have a desire to learn new things every day. I try to take one step every day, to learn something, not to stay behind. And this is the thing that controls me.
+		</h4>
+	</div>
+
+	<div class="button">
+		<a href="#"><button>Write a letter!</button></a>
+	</div>
+
+	<script src="{% static 'app.js' %}"></script>
+</body>
+</html>

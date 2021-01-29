@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'index.css' %}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<title>My Portfolio</title>
+</head>
+<body>
+	<section class="landing">	
+			<p>I am <span class="typed-text"></span><span class="cursor typing">&nbsp;</span></p>
+	</section>
+
+	<nav>
+		<div class="logo">
+			<a href="home"><img src="{% static 'img/logo2.png' %}"></a>
+		</div>
+		<ul class="nav-links">
+			<li><a href="about">About</a></li>
+			<li><a href="gallery">Gallery</a></li>
+			<li><a href="contact">Contact</a></li>
+			<li><a href="#">Projects</a></li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+
+	<div class="image">
+		<img src="{% static 'img/bg.jpg' %}">
+	</div>
+	
+	<script src="{% static 'app.js' %}"></script>
+</body>
+</html>
